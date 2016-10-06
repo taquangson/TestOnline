@@ -12,7 +12,13 @@ namespace TestOnline.Areas.Admin.Controllers
     {
         //
         // GET: /Admin/Login/
+        [HttpGet]
+        public ActionResult Index()
+        {
+            return View();
+        }
 
+        [HttpPost]
         public ActionResult Index(LoginModel model)
         {
             if (Membership.ValidateUser(model.username, model.password))
@@ -26,19 +32,10 @@ namespace TestOnline.Areas.Admin.Controllers
             }
         }
 
-        public ActionResult SignIn(LoginModel model)
+        public ActionResult SignOut()
         {
-            //return RedirectToAction("Index", "Admin/HomeAdmin");
-            if (Membership.ValidateUser(model.username, model.password))
-            {
-                FormsAuthentication.SetAuthCookie(model.username, model.remember);
-                return RedirectToRoute("AdminHome");
-            }
-            else
-            {
-                return RedirectToRoute("Admin_default");
-            }
-            
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Index", "Admin/Login");
         }
 
     }
