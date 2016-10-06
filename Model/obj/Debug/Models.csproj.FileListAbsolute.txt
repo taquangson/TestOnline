@@ -1,0 +1,9 @@
+C:\Users\quang\Desktop\MvcApplication3\Model\bin\Debug\Model.dll.config
+C:\Users\quang\Desktop\MvcApplication3\Model\bin\Debug\Model.dll
+C:\Users\quang\Desktop\MvcApplication3\Model\bin\Debug\Model.pdb
+C:\Users\quang\Desktop\MvcApplication3\Model\bin\Debug\EntityFramework.dll
+C:\Users\quang\Desktop\MvcApplication3\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\quang\Desktop\MvcApplication3\Model\bin\Debug\EntityFramework.xml
+C:\Users\quang\Desktop\MvcApplication3\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\quang\Desktop\MvcApplication3\Model\obj\Debug\Model.dll
+C:\Users\quang\Desktop\MvcApplication3\Model\obj\Debug\Model.pdb

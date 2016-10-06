@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DF780669-5161-4008-A9E7-CDC25F67EF6B}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestOnline</RootNamespace>
+    <AssemblyName>MvcApplication3</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.30506.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.30506.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\HomeAdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Areas\Admin\Content\css\bootstrap-responsive.css" />
+    <Content Include="Areas\Admin\Content\css\bootstrap-responsive.min.css" />
+    <Content Include="Areas\Admin\Content\css\bootstrap.css" />
+    <Content Include="Areas\Admin\Content\css\bootstrap.min.css" />
+    <Content Include="Areas\Admin\Content\css\chosen.css" />
+    <Content Include="Areas\Admin\Content\css\elfinder.min.css" />
+    <Content Include="Areas\Admin\Content\css\elfinder.theme.css" />
+    <Content Include="Areas\Admin\Content\css\font-awesome-ie7.min.css" />
+    <Content Include="Areas\Admin\Content\css\font-awesome.min.css" />
+    <Content Include="Areas\Admin\Content\css\fullcalendar.css" />
+    <Content Include="Areas\Admin\Content\css\glyphicons.css" />
+    <Content Include="Areas\Admin\Content\css\halflings.css" />
+    <Content Include="Areas\Admin\Content\css\ie.css" />
+    <Content Include="Areas\Admin\Content\css\ie9.css" />
+    <Content Include="Areas\Admin\Content\css\jquery-ui-1.8.21.custom.css" />
+    <Content Include="Areas\Admin\Content\css\jquery.cleditor.css" />
+    <Content Include="Areas\Admin\Content\css\jquery.gritter.css" />
+    <Content Include="Areas\Admin\Content\css\jquery.iphone.toggle.css" />
+    <Content Include="Areas\Admin\Content\css\jquery.noty.css" />
+    <Content Include="Areas\Admin\Content\css\noty_theme_default.css" />
+    <Content Include="Areas\Admin\Content\css\style-forms.css" />
+    <Content Include="Areas\Admin\Content\css\style-responsive.css" />
+    <Content Include="Areas\Admin\Content\css\style.css" />
+    <Content Include="Areas\Admin\Content\css\uniform.default.css" />
+    <Content Include="Areas\Admin\Content\css\uploadify.css" />
+    <Content Include="Areas\Admin\Content\font\glyphicons-regular.svg" />
+    <Content Include="Areas\Admin\Content\font\glyphiconshalflings-regular.svg" />
+    <Content Include="Areas\Admin\Content\img\arrows-active.png" />
+    <Content Include="Areas\Admin\Content\img\arrows-normal.png" />
+    <Content Include="Areas\Admin\Content\img\avatar.jpg" />
+    <Content Include="Areas\Admin\Content\img\bg-input-focus.png" />
+    <Content Include="Areas\Admin\Content\img\bg-input.png" />
+    <Content Include="Areas\Admin\Content\img\bg-login.jpg" />
+    <Content Include="Areas\Admin\Content\img\browser-chrome-big.png" />
+    <Content Include="Areas\Admin\Content\img\browser-firefox-big.png" />
+    <Content Include="Areas\Admin\Content\img\browser-ie.png" />
+    <Content Include="Areas\Admin\Content\img\browser-opera.png" />
+    <Content Include="Areas\Admin\Content\img\browser-safari.png" />
+    <Content Include="Areas\Admin\Content\img\buttons.gif" />
+    <Content Include="Areas\Admin\Content\img\chat-left%402x.png" />
+    <Content Include="Areas\Admin\Content\img\chat-left-metro%402x.png" />
+    <Content Include="Areas\Admin\Content\img\chat-left-metro.png" />
+    <Content Include="Areas\Admin\Content\img\chat-left.png" />
+    <Content Include="Areas\Admin\Content\img\chat-right%402x.png" />
+    <Content Include="Areas\Admin\Content\img\chat-right-metro%402x.png" />
+    <Content Include="Areas\Admin\Content\img\chat-right-metro.png" />
+    <Content Include="Areas\Admin\Content\img\chat-right.png" />
+    <Content Include="Areas\Admin\Content\img\chosen-sprite.png" />
+    <Content Include="Areas\Admin\Content\img\close-button-white.png" />
+    <Content Include="Areas\Admin\Content\img\close-button.png" />
+    <Content Include="Areas\Admin\Content\img\crop.gif" />
+    <Content Include="Areas\Admin\Content\img\dialogs.png" />
+    <Content Include="Areas\Admin\Content\img\gallery\photo1.jpg" />
+    <Content Include="Areas\Admin\Content\img\gallery\photo10.jpg" />
+    <Content Include="Areas\Admin\Content\img\gallery\photo11.jpg" />
+    <Content Include="Areas\Admin\Content\img\gallery\photo12.jpg" />
+    <Content Include="Areas\Admin\Content\img\gallery\photo13.jpg" />
+    <Content Include="Areas\Admin\Content\img\gallery\photo2.jpg" />
+    <Content Include="Areas\Admin\Content\img\gallery\photo3.jpg" />
+    <Content Include="Areas\Admin\Content\img\gallery\photo4.jpg" />
+    <Content Include="Areas\Admin\Content\img\gallery\photo5.jpg" />
+    <Content Include="Areas\Admin\Content\img\gallery\photo6.jpg" />
+    <Content Include="Areas\Admin\Content\img\gallery\photo7.jpg" />
+    <Content Include="Areas\Admin\Content\img\gallery\photo8.jpg" />
+    <Content Include="Areas\Admin\Content\img\gallery\photo9.jpg" />
+    <Content Include="Areas\Admin\Content\img\glyphicons-halflings-white.png" />
+    <Content Include="Areas\Admin\Content\img\glyphicons-halflings.png" />
+    <Content Include="Areas\Admin\Content\img\glyphicons-white.png" />
+    <Content Include="Areas\Admin\Content\img\glyphicons-white.svg" />
+    <Content Include="Areas\Admin\Content\img\glyphicons.png" />
+    <Content Include="Areas\Admin\Content\img\glyphicons.svg" />
+    <Content Include="Areas\Admin\Content\img\glyphicons_halflings-white.png" />
+    <Content Include="Areas\Admin\Content\img\glyphicons_halflings-white.svg" />
+    <Content Include="Areas\Admin\Content\img\glyphicons_halflings.png" />
+    <Content Include="Areas\Admin\Content\img\glyphicons_halflings.svg" />
+    <Content Include="Areas\Admin\Content\img\icons-big.png" />
+    <Content Include="Areas\Admin\Content\img\icons-small.png" />
+    <Content Include="Areas\Admin\Content\img\iphone-style-checkboxes\off-63584.png" />
+    <Content Include="Areas\Admin\Content\img\iphone-style-checkboxes\on-63584.png" />
+    <Content Include="Areas\Admin\Content\img\iphone-style-checkboxes\slider_center-63584.png" />
+    <Content Include="Areas\Admin\Content\img\iphone-style-checkboxes\slider_left-63584.png" />
+    <Content Include="Areas\Admin\Content\img\iphone-style-checkboxes\slider_right-63584.png" />
+    <Content Include="Areas\Admin\Content\img\progress.gif" />
+    <Content Include="Areas\Admin\Content\img\quicklook-bg.png" />
+    <Content Include="Areas\Admin\Content\img\quicklook-icons.png" />
+    <Content Include="Areas\Admin\Content\img\quote.png" />
+    <Content Include="Areas\Admin\Content\img\resize.png" />
+    <Content Include="Areas\Admin\Content\img\slider_r8.png" />
+    <Content Include="Areas\Admin\Content\img\spinner-mini.gif" />
+    <Content Include="Areas\Admin\Content\img\sprite.png" />
+    <Content Include="Areas\Admin\Content\img\timeline-bg.png" />
+    <Content Include="Areas\Admin\Content\img\timeline-left-arrow%402x.png" />
+    <Content Include="Areas\Admin\Content\img\timeline-left-arrow.png" />
+    <Content Include="Areas\Admin\Content\img\timeline-right-arrow%402x.png" />
+    <Content Include="Areas\Admin\Content\img\timeline-right-arrow.png" />
+    <Content Include="Areas\Admin\Content\img\toolbar.gif" />
+    <Content Include="Areas\Admin\Content\img\toolbar.png" />
+    <Content Include="Areas\Admin\Content\img\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Areas\Admin\Content\img\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Areas\Admin\Content\img\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Areas\Admin\Content\img\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Areas\Admin\Content\img\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Areas\Admin\Content\img\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Areas\Admin\Content\img\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Areas\Admin\Content\img\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Areas\Admin\Content\img\ui-icons_222222_256x240.png" />
+    <Content Include="Areas\Admin\Content\img\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Areas\Admin\Content\img\ui-icons_454545_256x240.png" />
+    <Content Include="Areas\Admin\Content\img\ui-icons_888888_256x240.png" />
+    <Content Include="Areas\Admin\Content\img\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Areas\Admin\Content\img\uploadify-cancel.png" />
+    <Content Include="Areas\Admin\Content\js\bootstrap.js" />
+    <Content Include="Areas\Admin\Content\js\bootstrap.min.js" />
+    <Content Include="Areas\Admin\Content\js\counter.js" />
+    <Content Include="Areas\Admin\Content\js\custom.js" />
+    <Content Include="Areas\Admin\Content\js\excanvas.js" />
+    <Content Include="Areas\Admin\Content\js\fullcalendar.min.js" />
+    <Content Include="Areas\Admin\Content\js\jquery-1.9.1.min.js" />
+    <Content Include="Areas\Admin\Content\js\jquery-migrate-1.0.0.min.js" />
+    <Content Include="Areas\Admin\Content\js\jquery-ui-1.10.0.custom.min.js" />
+    <Content Include="Areas\Admin\Content\js\jquery.chosen.min.js" />
+    <Content Include="Areas\Admin\Content\js\jquery.cleditor.min.js" />
+    <Content Include="Areas\Admin\Content\js\jquery.cookie.js" />
+    <Content Include="Areas\Admin\Content\js\jquery.dataTables.min.js" />
+    <Content Include="Areas\Admin\Content\js\jquery.elfinder.min.js" />
+    <Content Include="Areas\Admin\Content\js\jquery.flot.js" />
+    <Content Include="Areas\Admin\Content\js\jquery.flot.pie.js" />
+    <Content Include="Areas\Admin\Content\js\jquery.flot.resize.min.js" />
+    <Content Include="Areas\Admin\Content\js\jquery.flot.stack.js" />
+    <Content Include="Areas\Admin\Content\js\jquery.gritter.min.js" />
+    <Content Include="Areas\Admin\Content\js\jquery.imagesloaded.js" />
+    <Content Include="Areas\Admin\Content\js\jquery.iphone.toggle.js" />
+    <Content Include="Areas\Admin\Content\js\jquery.knob.modified.js" />
+    <Content Include="Areas\Admin\Content\js\jquery.masonry.min.js" />
+    <Content Include="Areas\Admin\Content\js\jquery.noty.js" />
+    <Content Include="Areas\Admin\Content\js\jquery.raty.min.js" />
+    <Content Include="Areas\Admin\Content\js\jquery.sparkline.min.js" />
+    <Content Include="Areas\Admin\Content\js\jquery.ui.touch-punch.js" />
+    <Content Include="Areas\Admin\Content\js\jquery.uniform.min.js" />
+    <Content Include="Areas\Admin\Content\js\jquery.uploadify-3.1.min.js" />
+    <Content Include="Areas\Admin\Content\js\modernizr.js" />
+    <Content Include="Areas\Admin\Content\js\retina.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Models\" />
+    <Folder Include="Views\Shared\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Admin\Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Models.csproj">
+      <Project>{cdab6323-e568-4f8a-85db-253ea7de1bb3}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Admin\Content\font\fontawesome-webfont-0.eot" />
+    <Content Include="Areas\Admin\Content\font\fontawesome-webfont-62877.eot" />
+    <Content Include="Areas\Admin\Content\font\fontawesome-webfont-62877.ttf" />
+    <Content Include="Areas\Admin\Content\font\fontawesome-webfont-62877.woff" />
+    <Content Include="Areas\Admin\Content\font\glyphicons-regular-0.eot" />
+    <Content Include="Areas\Admin\Content\font\glyphicons-regular.eot" />
+    <Content Include="Areas\Admin\Content\font\glyphicons-regular.ttf" />
+    <Content Include="Areas\Admin\Content\font\glyphicons-regular.woff" />
+    <Content Include="Areas\Admin\Content\font\glyphiconshalflings-regular-0.eot" />
+    <Content Include="Areas\Admin\Content\font\glyphiconshalflings-regular.eot" />
+    <Content Include="Areas\Admin\Content\font\glyphiconshalflings-regular.ttf" />
+    <Content Include="Areas\Admin\Content\font\glyphiconshalflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Admin\Views\HomeAdmin\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Admin\Views\Login\Index.cshtml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63845</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:63845/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
