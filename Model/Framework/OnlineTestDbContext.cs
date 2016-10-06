@@ -12,10 +12,17 @@ namespace Model.Framework
         {
         }
 
-        public virtual DbSet<admin> admins { get; set; }
+        public virtual DbSet<Account> Accounts { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Account>()
+                .Property(e => e.username)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Account>()
+                .Property(e => e.password)
+                .IsUnicode(false);
         }
     }
 }

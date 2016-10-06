@@ -7,3 +7,12 @@ C:\Users\quang\Desktop\MvcApplication3\Model\bin\Debug\EntityFramework.xml
 C:\Users\quang\Desktop\MvcApplication3\Model\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\quang\Desktop\MvcApplication3\Model\obj\Debug\Model.dll
 C:\Users\quang\Desktop\MvcApplication3\Model\obj\Debug\Model.pdb
+D:\Project\TestOnline\Model\bin\Debug\Model.dll.config
+D:\Project\TestOnline\Model\bin\Debug\Model.dll
+D:\Project\TestOnline\Model\bin\Debug\Model.pdb
+D:\Project\TestOnline\Model\bin\Debug\EntityFramework.dll
+D:\Project\TestOnline\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Project\TestOnline\Model\bin\Debug\EntityFramework.xml
+D:\Project\TestOnline\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Project\TestOnline\Model\obj\Debug\Model.dll
+D:\Project\TestOnline\Model\obj\Debug\Model.pdb

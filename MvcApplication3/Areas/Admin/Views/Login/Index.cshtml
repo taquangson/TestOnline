@@ -18,10 +18,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- end: Mobile Specific -->
     <!-- start: CSS -->
-    <link id="bootstrap-style" href="~/Areas/Admin/Content/css/bootstrap.min.css" rel="stylesheet">
-    <link href="~/Areas/Admin/Content/css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link id="base-style" href="~/Areas/Admin/Content/css/style.css" rel="stylesheet">
-    <link id="base-style-responsive" href="~/Areas/Admin/Content/css/style-responsive.css" rel="stylesheet">
+    <link id="bootstrap-style" href="~/Content/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link id="base-style" href="~/Content/css/style.css" rel="stylesheet">
+    <link id="base-style-responsive" href="~/Content/css/style-responsive.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
     <!-- end: CSS -->
     <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -38,7 +38,7 @@
 
     <style type="text/css">
         body {
-            background: url(Areas/Admin/Content/img/bg-login.jpg) !important;
+            background: url(../../Content/img/bg-login.jpg) !important;
         }
     </style>
 
@@ -56,7 +56,7 @@
                         <a href="#"><i class="halflings-icon cog"></i></a>
                     </div>
                     <h2>Đăng nhập vào tài khoản quản trị viên</h2>
-                    <form class="form-horizontal" action="/Login/SignIn" method="post">
+                    <form class="form-horizontal" action="/Admin/Login/Index" method="post">
                         <fieldset>
 
                             <div class="input-prepend" title="Username">
@@ -70,7 +70,7 @@
                             </div>
                             <div class="clearfix"></div>
 
-                            <label class="remember" for="remember"><input type="checkbox" id="remember" />Ghi nhớ mật khẩu</label>
+                            <label class="remember" for="remember"><input type="checkbox" id="remember" name="remember" />Ghi nhớ mật khẩu</label>
                             <div class="button-login">
                                 <button type="submit" class="btn btn-primary">Đăng nhập</button>
                             </div>
@@ -88,58 +88,58 @@
 
     </div><!--/fluid-row-->
     <!-- start: JavaScript-->
-    <script src="~/Areas/Admin/Content/js/jquery-1.9.1.min.js"></script>
-    <script src="~/Areas/Admin/Content/js/jquery-migrate-1.0.0.min.js"></script>
+    <script src="~/Content/js/jquery-1.9.1.min.js"></script>
+    <script src="~/Content/js/jquery-migrate-1.0.0.min.js"></script>
 
-    <script src="~/Areas/Admin/Content/js/jquery-ui-1.10.0.custom.min.js"></script>
+    <script src="~/Content/js/jquery-ui-1.10.0.custom.min.js"></script>
 
-    <script src="~/Areas/Admin/Content/js/jquery.ui.touch-punch.js"></script>
+    <script src="~/Content/js/jquery.ui.touch-punch.js"></script>
 
-    <script src="~/Areas/Admin/Content/js/modernizr.js"></script>
+    <script src="~/Content/js/modernizr.js"></script>
 
-    <script src="~/Areas/Admin/Content/js/bootstrap.min.js"></script>
+    <script src="~/Content/js/bootstrap.min.js"></script>
 
-    <script src="~/Areas/Admin/Content/js/jquery.cookie.js"></script>
+    <script src="~/Content/js/jquery.cookie.js"></script>
 
-    <script src='~/Areas/Admin/Content/js/fullcalendar.min.js'></script>
+    <script src='~/Content/js/fullcalendar.min.js'></script>
 
-    <script src='~/Areas/Admin/Content/js/jquery.dataTables.min.js'></script>
-    <script src="~/Areas/Admin/Content/js/excanvas.js"></script>
-    <script src="~/Areas/Admin/Content/js/jquery.flot.js"></script>
-    <script src="~/Areas/Admin/Content/js/jquery.flot.pie.js"></script>
-    <script src="~/Areas/Admin/Content/js/jquery.flot.stack.js"></script>
-    <script src="~/Areas/Admin/Content/js/jquery.flot.resize.min.js"></script>
+    <script src='~/Content/js/jquery.dataTables.min.js'></script>
+    <script src="~/Content/js/excanvas.js"></script>
+    <script src="~/Content/js/jquery.flot.js"></script>
+    <script src="~/Content/js/jquery.flot.pie.js"></script>
+    <script src="~/Content/js/jquery.flot.stack.js"></script>
+    <script src="~/Content/js/jquery.flot.resize.min.js"></script>
 
-    <script src="~/Areas/Admin/Content/js/jquery.chosen.min.js"></script>
+    <script src="~/Content/js/jquery.chosen.min.js"></script>
 
-    <script src="~/Areas/Admin/Content/js/jquery.uniform.min.js"></script>
+    <script src="~/Content/js/jquery.uniform.min.js"></script>
 
-    <script src="~/Areas/Admin/Content/js/jquery.cleditor.min.js"></script>
+    <script src="~/Content/js/jquery.cleditor.min.js"></script>
 
-    <script src="~/Areas/Admin/Content/js/jquery.noty.js"></script>
+    <script src="~/Content/js/jquery.noty.js"></script>
 
-    <script src="~/Areas/Admin/Content/js/jquery.elfinder.min.js"></script>
+    <script src="~/Content/js/jquery.elfinder.min.js"></script>
 
-    <script src="~/Areas/Admin/Content/js/jquery.raty.min.js"></script>
+    <script src="~/Content/js/jquery.raty.min.js"></script>
 
-    <script src="~/Areas/Admin/Content/js/jquery.iphone.toggle.js"></script>
+    <script src="~/Content/js/jquery.iphone.toggle.js"></script>
 
-    <script src="~/Areas/Admin/Content/js/jquery.uploadify-3.1.min.js"></script>
+    <script src="~/Content/js/jquery.uploadify-3.1.min.js"></script>
 
-    <script src="~/Areas/Admin/Content/js/jquery.gritter.min.js"></script>
+    <script src="~/Content/js/jquery.gritter.min.js"></script>
 
-    <script src="~/Areas/Admin/Content/js/jquery.imagesloaded.js"></script>
+    <script src="~/Content/js/jquery.imagesloaded.js"></script>
 
-    <script src="~/Areas/Admin/Content/js/jquery.masonry.min.js"></script>
+    <script src="~/Content/js/jquery.masonry.min.js"></script>
 
-    <script src="~/Areas/Admin/Content/js/jquery.knob.modified.js"></script>
+    <script src="~/Content/js/jquery.knob.modified.js"></script>
 
-    <script src="~/Areas/Admin/Content/js/jquery.sparkline.min.js"></script>
+    <script src="~/Content/js/jquery.sparkline.min.js"></script>
 
-    <script src="~/Areas/Admin/Content/js/counter.js"></script>
+    <script src="~/Content/js/counter.js"></script>
 
-    <script src="~/Areas/Admin/Content/js/retina.js"></script>
-    <script src="~/Areas/Admin/Content/js/custom.js"></script>
+    <script src="~/Content/js/retina.js"></script>
+    <script src="~/Content/js/custom.js"></script>
     <!-- end: JavaScript-->
     <!-- end: JavaScript-->
 

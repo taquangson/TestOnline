@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
+using TestOnline.Areas.Admin.Models.Login;
 
 namespace TestOnline.Areas.Admin.Controllers
 {
@@ -11,15 +13,32 @@ namespace TestOnline.Areas.Admin.Controllers
         //
         // GET: /Admin/Login/
 
-        public ActionResult Index()
+        public ActionResult Index(LoginModel model)
         {
-            return View();
+            if (Membership.ValidateUser(model.username, model.password))
+            {
+                FormsAuthentication.SetAuthCookie(model.username, model.remember);
+                return RedirectToRoute("AdminHome");
+            }
+            else
+            {
+                return View(model);
+            }
         }
 
-        public ActionResult SignIn()
+        public ActionResult SignIn(LoginModel model)
         {
             //return RedirectToAction("Index", "Admin/HomeAdmin");
-            return RedirectToRoute("AdminHome");
+            if (Membership.ValidateUser(model.username, model.password))
+            {
+                FormsAuthentication.SetAuthCookie(model.username, model.remember);
+                return RedirectToRoute("AdminHome");
+            }
+            else
+            {
+                return RedirectToRoute("Admin_default");
+            }
+            
         }
 
     }

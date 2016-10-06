@@ -7,20 +7,14 @@ namespace Model.Framework
     using System.Data.Entity.Spatial;
 
     [Table("admin")]
-    public partial class admin
+    public partial class Account
     {
-        public int id { get; set; }
-
+        [Key]
         [StringLength(50)]
-        public string name { get; set; }
-
-        [StringLength(50)]
-        public string account { get; set; }
+        public string username { get; set; }
 
         [StringLength(50)]
         public string password { get; set; }
 
-        [StringLength(50)]
-        public string role { get; set; }
     }
 }

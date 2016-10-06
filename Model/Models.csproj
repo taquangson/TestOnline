@@ -51,7 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountModels.cs" />
-    <Compile Include="Framework\admin.cs" />
+    <Compile Include="Framework\Account.cs" />
     <Compile Include="Framework\OnlineTestDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

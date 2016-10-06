@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace TestOnline.Areas.Admin.Controllers
 {
+    [Authorize]
     public class HomeAdminController : Controller
     {
         //
